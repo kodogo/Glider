@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <link rel="stylesheet" href="css/glider.css" type="text/css" media="all" />
+      <title>Glider</title>
+   </head>
+
+  <body>
+  <div id='arena'>
+      <canvas id='canvas' width='512' height='342'>
+         Canvas not supported
+      </canvas>
+
+      <div id='instructions'>
+
+         <div class='keys'>
+         &larr;<div class='explanation'>left</div>
+         </div>
+         <div class='keys'>
+         &rarr;<div class='explanation'>right</div>
+         </div>
+      
+         <div class='keys'>
+            spacebar <div class='explanation'>shoot</div>
+         </div>
+      
+         <div class='keys'>
+            return <div class='explanation'>boost</div>
+         </div>
+      
+         <div class='keys'>
+            esc <div class='explanation'>pause / resume</div>
+         </div>
+       
+      </div>
+      
+<!-- Checkboxes.....................................-->
+
+<div id='checkboxes'>
+	<div class='checkbox-div'>
+	Sound <input id='sound-checkbox' type='checkbox' checked/>
+	</div>
+
+	<div class='checkbox-div'>
+	Music <input id='music-checkbox' type='checkbox' checked/>
+	</div>
+
+   <div class='checkbox-div'>
+      Air visible <input id='air-visible-checkbox' type='checkbox' checked/>
+      </div>
+  
+      <div class='checkbox-div'>
+         Lights<input id='lights-on-checkbox' type='checkbox' checked/>
+         </div>
+   
+	<div class='checkbox-div'>
+	Cheat <input id='cheat-checkbox' type='checkbox' checked/>
+   </div>
+  
+   <span id='rooms-span'>
+      Room 
+      <select id='rooms-select'>
+      </select>
+   </span>
+
+</div>
+ 
+
+<div id='buttons-div'>
+   <span id='houses-span'>
+      House 
+      <select id='houses-select'>
+      </select>
+   </span>
+   
+   <input type='button' value='Start' id='start-button' class='glider-button'>
+   <input type='button' value='Quit' id='quit-button' class='glider-button'>
+   <span id='credit'>
+      Javascript port by <a href="mailto:jumbo.trudgeon@gmail.com">jumbo trudgeon</a>
+   </span>
+</div>
+
+
+
+      <script src='js/g-quickdraw.js'></script>
+      <script src='js/g-globals.js'></script>
+      <script src='js/g-houses.js'></script>
+      <script src='js/g-globalutils.js'></script>
+      <script src='js/g-initialize.js'></script>
+      <script src='js/g-eventrects.js'></script>
+      <script src='js/g-headline.js'></script>
+      <script src='js/g-playutils.js'></script>
+      <script src='js/g-idleinput.js'></script>
+      <script src='js/g-playsetup.js'></script>
+      <script src='js/g-playactive.js'></script>
+      <script src='js/g-gamebody.js'></script>
+   </body>
+</html>
